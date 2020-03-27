@@ -2,3 +2,6 @@ node_modules
 project_submissions
 project_instructions
 project_peer_submissions
+package.json
+package-lock.json
+
