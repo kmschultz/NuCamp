@@ -5,20 +5,26 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Schultz",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.13.1",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1",
+    "popper.js": "^1.16.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
-    "popper.js": "^1.12.9",
     "wget": "0.0.1"
   },
   "repository": {
