@@ -1,6 +1,6 @@
 node_modules
+dist
 project_instructions
 project_peer_submissions
-package.json
 package-lock.json
 
