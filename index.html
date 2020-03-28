@@ -34,8 +34,11 @@
                 <div class="col-md-4 col-xl-2 mt-4">
                     <!-- button for reserve form modal -->
                     <span class="navbar-text ml-auto">
+                        <!-- jquery activated modal -->
+                        <a roll="button"  id="reserveButton" class="btn btn-lg btn-info">Reserve Campsite</a>
+                        <!-- data-toggle (css activated) modal 
                         <a roll="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-lg btn-info">
-                            Reserve Campsite</a>
+                            Reserve Campsite</a> -->
                     </span>
 
                     <!-- Removed in-page form button & tooltip 
@@ -52,7 +55,8 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info">
+                <!--<div class="modal-header bg-info">-->
+                <div class="modal-header">
                     <h3 class="modal-title text-white">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -127,11 +131,16 @@
                     <li class='nav-item'><a href="contactus.html" class="nav-link">
                             <i class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
-                <!-- button for the login modal-->
+                <!-- jQuery activated button for the login modal-->
+                <span class="navbar-text ml-auto">
+                    <a id="loginButton">
+                        <i class="fa fa-sign-in"></i> Login</a>
+                </span>
+                <!-- data-toggle (css activated) button for the login modal
                 <span class="navbar-text ml-auto">
                     <a data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in"></i> Login</a>
-                </span>
+                </span>-->
             </div>
         </div>
     </nav>
